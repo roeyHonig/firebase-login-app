@@ -13,6 +13,7 @@
 		6DC2FC5E2120C0A300DB5B8E /* firebase_login_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2FC5C2120C0A300DB5B8E /* firebase_login_app.xcdatamodeld */; };
 		6DC2FC602120C0A300DB5B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC2FC5F2120C0A300DB5B8E /* Assets.xcassets */; };
 		6DC2FC632120C0A300DB5B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC2FC612120C0A300DB5B8E /* LaunchScreen.storyboard */; };
+		6DC2FC6B2120C24D00DB5B8E /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2FC6A2120C24D00DB5B8E /* WelcomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6DC2FC5F2120C0A300DB5B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DC2FC622120C0A300DB5B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DC2FC642120C0A300DB5B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC2FC6A2120C24D00DB5B8E /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6DC2FC612120C0A300DB5B8E /* LaunchScreen.storyboard */,
 				6DC2FC642120C0A300DB5B8E /* Info.plist */,
 				6DC2FC5C2120C0A300DB5B8E /* firebase_login_app.xcdatamodeld */,
+				6DC2FC6A2120C24D00DB5B8E /* WelcomeScreenViewController.swift */,
 			);
 			path = "firebase-login-app";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DC2FC5E2120C0A300DB5B8E /* firebase_login_app.xcdatamodeld in Sources */,
+				6DC2FC6B2120C24D00DB5B8E /* WelcomeScreenViewController.swift in Sources */,
 				6DC2FC582120C0A300DB5B8E /* ViewController.swift in Sources */,
 				6DC2FC562120C0A300DB5B8E /* AppDelegate.swift in Sources */,
 			);

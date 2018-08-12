@@ -16,17 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login In Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Si-dcv">
+                                <rect key="frame" x="0.0" y="28" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joE-hH-X0i">
+                                <rect key="frame" x="0.0" y="537" width="375" height="30"/>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="showWelcomeScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJq-EK-fbZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cun-Si-dcv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="BqT-94-rCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="joE-hH-X0i" secondAttribute="bottom" constant="100" id="Y5k-Ig-fbU"/>
+                            <constraint firstItem="joE-hH-X0i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iNh-5D-1IH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cun-Si-dcv" secondAttribute="trailing" id="l1f-rA-Ban"/>
+                            <constraint firstItem="Cun-Si-dcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qez-Wg-ElN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="joE-hH-X0i" secondAttribute="trailing" id="sTA-Q5-jdH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="VWK-0x-Yzc" kind="show" identifier="goToWelcomeScreen" id="QsN-54-O7q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="206" y="29"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome Screen View Controller-->
         <scene sceneID="6JN-1i-vrN">
             <objects>
-                <viewController id="VWK-0x-Yzc" sceneMemberID="viewController">
+                <viewController id="VWK-0x-Yzc" customClass="WelcomeScreenViewController" customModule="firebase_login_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wF7-o9-lEe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,11 +67,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHZ-pN-kK5">
                                 <rect key="frame" x="0.0" y="537" width="375" height="30"/>
                                 <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="returnToLogin:" destination="VWK-0x-Yzc" eventType="touchUpInside" id="j1y-Eg-X7Z"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb3-MK-2Ue">
+                                <rect key="frame" x="0.0" y="28" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qb3-MK-2Ue" firstAttribute="top" secondItem="wKw-N3-O6x" secondAttribute="top" constant="8" id="9D3-py-c97"/>
                             <constraint firstItem="wKw-N3-O6x" firstAttribute="trailing" secondItem="nHZ-pN-kK5" secondAttribute="trailing" id="BoE-OM-uAi"/>
+                            <constraint firstItem="qb3-MK-2Ue" firstAttribute="leading" secondItem="wKw-N3-O6x" secondAttribute="leading" id="F1x-uk-LIU"/>
+                            <constraint firstItem="wKw-N3-O6x" firstAttribute="trailing" secondItem="qb3-MK-2Ue" secondAttribute="trailing" id="O98-xf-Ivg"/>
                             <constraint firstItem="wKw-N3-O6x" firstAttribute="bottom" secondItem="nHZ-pN-kK5" secondAttribute="bottom" constant="100" id="Sv6-io-1sg"/>
                             <constraint firstItem="nHZ-pN-kK5" firstAttribute="leading" secondItem="wKw-N3-O6x" secondAttribute="leading" id="jwm-Pk-ua3"/>
                             <constraint firstItem="wRg-MZ-dZv" firstAttribute="centerX" secondItem="wF7-o9-lEe" secondAttribute="centerX" id="wMm-aY-h84"/>
@@ -52,10 +91,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wKw-N3-O6x"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goBackToLogin" id="fzp-kD-fO3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sji-1R-iHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="117"/>
+            <point key="canvasLocation" x="943" y="28"/>
         </scene>
     </scenes>
 </document>
