@@ -11,7 +11,7 @@ import UIKit
 class WelcomeScreenViewController: UIViewController {
 
     @IBAction func returnToLogin(_ sender: UIButton) {
-        performSegue(withIdentifier: "goBackToLogin", sender: sender)
+        // performSegue(withIdentifier: "goBackToLogin", sender: sender)
     }
     
     override func viewDidLoad() {

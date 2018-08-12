@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func showWelcomeScreen(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToWelcomeScreen", sender: sender)
+        // performSegue(withIdentifier: "goToWelcomeScreen", sender: sender)
     }
     
     

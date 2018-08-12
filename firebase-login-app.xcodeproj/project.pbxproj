@@ -14,6 +14,8 @@
 		6DC2FC602120C0A300DB5B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC2FC5F2120C0A300DB5B8E /* Assets.xcassets */; };
 		6DC2FC632120C0A300DB5B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC2FC612120C0A300DB5B8E /* LaunchScreen.storyboard */; };
 		6DC2FC6B2120C24D00DB5B8E /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2FC6A2120C24D00DB5B8E /* WelcomeScreenViewController.swift */; };
+		6DC2FC6D2120C92C00DB5B8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DC2FC6C2120C92C00DB5B8E /* GoogleService-Info.plist */; };
+		D4D3FA8A929CBB2C6092951A /* Pods_firebase_login_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5953E7D96B981B4E2494FB /* Pods_firebase_login_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		6DC2FC622120C0A300DB5B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DC2FC642120C0A300DB5B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC2FC6A2120C24D00DB5B8E /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		6DC2FC6C2120C92C00DB5B8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D5953E7D96B981B4E2494FB /* Pods_firebase_login_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebase_login_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A550058BAE974C3EB36B2173 /* Pods-firebase-login-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-login-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebase-login-app/Pods-firebase-login-app.release.xcconfig"; sourceTree = "<group>"; };
+		D4144229C8DC02AAEB2EB149 /* Pods-firebase-login-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-login-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebase-login-app/Pods-firebase-login-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D3FA8A929CBB2C6092951A /* Pods_firebase_login_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46F4E36DE059908FE92DBB82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5953E7D96B981B4E2494FB /* Pods_firebase_login_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6DC2FC492120C0A300DB5B8E = {
 			isa = PBXGroup;
 			children = (
 				6DC2FC542120C0A300DB5B8E /* firebase-login-app */,
 				6DC2FC532120C0A300DB5B8E /* Products */,
+				C35ACFD7200EC679E2C8EE90 /* Pods */,
+				46F4E36DE059908FE92DBB82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +81,20 @@
 				6DC2FC5F2120C0A300DB5B8E /* Assets.xcassets */,
 				6DC2FC612120C0A300DB5B8E /* LaunchScreen.storyboard */,
 				6DC2FC642120C0A300DB5B8E /* Info.plist */,
+				6DC2FC6C2120C92C00DB5B8E /* GoogleService-Info.plist */,
 				6DC2FC5C2120C0A300DB5B8E /* firebase_login_app.xcdatamodeld */,
 				6DC2FC6A2120C24D00DB5B8E /* WelcomeScreenViewController.swift */,
 			);
 			path = "firebase-login-app";
+			sourceTree = "<group>";
+		};
+		C35ACFD7200EC679E2C8EE90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4144229C8DC02AAEB2EB149 /* Pods-firebase-login-app.debug.xcconfig */,
+				A550058BAE974C3EB36B2173 /* Pods-firebase-login-app.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DC2FC672120C0A300DB5B8E /* Build configuration list for PBXNativeTarget "firebase-login-app" */;
 			buildPhases = (
+				F5D8BC4FC072AF3E4B5E2388 /* [CP] Check Pods Manifest.lock */,
 				6DC2FC4E2120C0A300DB5B8E /* Sources */,
 				6DC2FC4F2120C0A300DB5B8E /* Frameworks */,
 				6DC2FC502120C0A300DB5B8E /* Resources */,
+				B2A8A5F06FD59ADF5E1010D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DC2FC632120C0A300DB5B8E /* LaunchScreen.storyboard in Resources */,
+				6DC2FC6D2120C92C00DB5B8E /* GoogleService-Info.plist in Resources */,
 				6DC2FC602120C0A300DB5B8E /* Assets.xcassets in Resources */,
 				6DC2FC5B2120C0A300DB5B8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2A8A5F06FD59ADF5E1010D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-firebase-login-app/Pods-firebase-login-app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firebase-login-app/Pods-firebase-login-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D8BC4FC072AF3E4B5E2388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-firebase-login-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DC2FC4E2120C0A300DB5B8E /* Sources */ = {
@@ -280,6 +351,7 @@
 		};
 		6DC2FC682120C0A300DB5B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4144229C8DC02AAEB2EB149 /* Pods-firebase-login-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +367,7 @@
 		};
 		6DC2FC692120C0A300DB5B8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A550058BAE974C3EB36B2173 /* Pods-firebase-login-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
