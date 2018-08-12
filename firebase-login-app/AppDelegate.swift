@@ -4,7 +4,7 @@
 //
 //  Created by hackeru on 1 Elul 5778.
 //  Copyright © 5778 student.roey.honig. All rights reserved.
-//
+//  FireBase configuered :)
 
 import UIKit
 import CoreData
