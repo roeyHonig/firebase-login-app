@@ -30,15 +30,26 @@
                                     <action selector="showWelcomeScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJq-EK-fbZ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-dk-wyu" customClass="GIDSignInButton">
+                                <rect key="frame" x="0.0" y="303" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rUl-6t-VSE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="TgL-dk-wyu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7LT-fO-E4q"/>
+                            <constraint firstItem="TgL-dk-wyu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BG5-9N-L1M"/>
                             <constraint firstItem="Cun-Si-dcv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="BqT-94-rCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TgL-dk-wyu" secondAttribute="trailing" id="SB7-Ym-PHO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="joE-hH-X0i" secondAttribute="bottom" constant="100" id="Y5k-Ig-fbU"/>
                             <constraint firstItem="joE-hH-X0i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iNh-5D-1IH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cun-Si-dcv" secondAttribute="trailing" id="l1f-rA-Ban"/>
                             <constraint firstItem="Cun-Si-dcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qez-Wg-ElN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="joE-hH-X0i" secondAttribute="trailing" id="sTA-Q5-jdH"/>
+                            <constraint firstItem="TgL-dk-wyu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tov-hl-DM3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -92,6 +103,7 @@
                         <viewLayoutGuide key="safeArea" id="wKw-N3-O6x"/>
                     </view>
                     <connections>
+                        <outlet property="displayName" destination="wRg-MZ-dZv" id="aJ5-YW-no2"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goBackToLogin" id="fzp-kD-fO3"/>
                     </connections>
                 </viewController>

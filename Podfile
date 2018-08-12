@@ -7,5 +7,7 @@ target 'firebase-login-app' do
 
   # Pods for firebase-login-app
     pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'GoogleSignIn'
 
 end
